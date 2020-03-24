@@ -1,35 +1,11 @@
-plugins {
-	id 'org.springframework.boot'
-	id 'io.spring.dependency-management'
-	id 'java'
-}
-
-group = 'com.inwaiders.plames'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '1.8'
+apply plugin: 'java-library'
 
 repositories {
-	mavenCentral()
-	jcenter()
-}
 
-bootJar {
-
-   enabled = false
-}
-
-jar{
-
-	enabled = true
-    baseName = 'plames-python-api' 
-    version = '1.0'
+    jcenter()
 }
 
 dependencies {
-	
-	compile project(':Plames-API')
-}
 
-test {
-	useJUnitPlatform()
+	compile project(':Plames-API')
 }
