@@ -1,4 +1,0 @@
-rootProject.name = 'Plames-Python-API'
-
-include ":Plames-API"
-project(":Plames-API").projectDir = file("../Plames-API")
